@@ -1,0 +1,52 @@
+/* 
+Color Palette: https://coolors.co/424b54-93a8ac-ffffff-e2b4bd-9b6a6c
+Charcoal:   #424B54
+Cadet grey: #93A8AC
+White:      #FFFFFF
+Orchid pink: #E2B4BD
+Rose Taupe: #9B6A6c
+*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: monospace;
+}
+
+.welcome {
+    height: 100vh;
+    color: white;
+    background-color: #424B54;
+}
+
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow {
+    box-shadow: 0 0 10px #222
+}
+
+/* basic button*/
+
+.btn {
+    border: 0;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #222;
+    background-color: lightskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #93A8AC;
+    color: #424B54;
+}
+
+.btn:active {
+    box-shadow: 5px 5px 20px #222;
+}
