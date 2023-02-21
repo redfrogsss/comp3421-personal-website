@@ -27,6 +27,16 @@ section h2 {
     font-size: 1.17em;
 }
 
+header {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0;
+}
+
+table caption {
+    caption-side: bottom;
+}
 
 .welcome {
     height: 100vh;
@@ -83,13 +93,6 @@ section h2 {
 .a {
     /* text-decoration: none; */
     color: lightblue;
-}
-
-header {
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    top: 0;
 }
 
 .nav {
@@ -162,4 +165,11 @@ header {
     width: 80%;
     box-shadow: 0 0 5px gray;
     border: 8px solid lightblue;
+}
+
+.course-table {
+    border: 1px solid #0c0c0c;
+    width: 100%;
+    border-radius: 16px;
+    text-align: center;
 }
