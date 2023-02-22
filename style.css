@@ -148,6 +148,7 @@ table caption {
     margin: 0 16px 0 0;
     padding: 32px;
     box-shadow: 0 0 5px gray;
+    height: fit-content;
 }
 
 .content-right {
@@ -172,6 +173,7 @@ table caption {
     width: 100%;
     border-radius: 16px;
     text-align: center;
+    line-height: 1.5;
 }
 
 .contact-form {
