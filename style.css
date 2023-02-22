@@ -53,6 +53,7 @@ table caption {
     background-image: url('img/campus.jpg');
     background-size: cover;
     background-clip: inherit;
+    animation: fadeIn 1s;
 }
 
 .layer {
@@ -116,10 +117,14 @@ table caption {
     border-radius: 32px;
     margin: 16px 5% 0 ;
     box-shadow: 0 0 5px gray;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .nav li {
     margin: 16px;
+    animation: fadeIn 1s;
 }
 
 .nav a {
@@ -158,6 +163,9 @@ table caption {
     padding: 32px;
     box-shadow: 0 0 5px gray;
     height: fit-content;
+    position: sticky;
+    top: 80px;
+    animation: fadeIn 1s;
 }
 
 .content-right {
@@ -168,6 +176,7 @@ table caption {
     padding: 32px;
     grid-column: 2/5;
     box-shadow: 0 0 5px gray;
+    animation: fadeIn 1s;
 }
 
 .rounded-img {
@@ -228,4 +237,9 @@ table caption {
     margin: 0 8px;
     position: relative;
     top: 2px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 0.8; }
 }
