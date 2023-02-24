@@ -18,19 +18,19 @@ This is a personal website for COMP3421 Mid-Project. This website is built with 
 - [x] etc.
 
 ## Screenshots
-Home Page
+- Home Page
 ![Home Page](./img/readme-img/01.png)
 
-About Me Page
+- About Me Page
 ![Home Page](./img/readme-img/02.png)
 
-Course Attended Page
+- Course Attended Page
 ![Home Page](./img/readme-img/03.png)
 
-Work Experience Page
+- Work Experience Page
 ![Home Page](./img/readme-img/04.png)
 
-Contact Me Page
+- Contact Me Page
 ![Home Page](./img/readme-img/05.png)
 
 ## Learn More
