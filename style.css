@@ -11,14 +11,8 @@ html,
 body {
     min-height: 100%;
     margin: 0;
-    /* font-family: monospace; */
-    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
-    /* font-family:  monospace; */
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
     background-color: #93A8AC;
-    /* background-image: url('img/campus.jpg'); */
-    /* background-size: 100%; */
-    /* background-repeat: no-repeat; */
-    /* background-attachment: fixed; */
     font-size: 14px;
 }
 
@@ -36,15 +30,28 @@ section h2 {
     font-size: 16px;
 }
 
-header {
+.navbar {
     margin: 0px;
-    padding: 0px;
-    position: absolute;
+    padding: 16px 5% 0;
+    position: sticky;
     top: 0;
+    z-index: 3;
 }
 
 table caption {
     caption-side: bottom;
+}
+
+.bg {
+    filter: blur(5px) brightness(70%);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
 }
 
 .welcome {
@@ -86,7 +93,7 @@ table caption {
     border-radius: 16px;
     box-shadow: 0 0 5px #222;
     background-color: lightskyblue;
-    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
     font-weight: bold;
     opacity: 1;
     color: #0c0c0c;
@@ -120,11 +127,7 @@ table caption {
     grid-template-columns: 35% auto auto auto auto auto;
     list-style: none;
     border-radius: 32px;
-    margin: 16px 5% 0 ;
     box-shadow: 0 0 5px gray;
-    position: sticky;
-    top: 0;
-    z-index: 1;
 }
 
 .nav li {
@@ -162,26 +165,28 @@ table caption {
 
 .content-left {
     background-color: white;
-    opacity: 0.8;
+    opacity: 1;
     border-radius: 32px;
     margin: 0 16px 0 0;
     padding: 32px;
     box-shadow: 0 0 5px gray;
     height: fit-content;
     position: sticky;
-    top: 80px;
+    top: 100px;
     animation: fadeIn 1s;
+    z-index: 2;
 }
 
 .content-right {
     background-color: white;
-    opacity: 0.8;
+    opacity: 1;
     border-radius: 32px;
     margin: 0 0 0 16px;
     padding: 32px;
     grid-column: 2/5;
     box-shadow: 0 0 5px gray;
     animation: fadeIn 1s;
+    z-index: 2;
 }
 
 .rounded-img {
@@ -216,7 +221,7 @@ table caption {
     margin: 8px 0;
     padding: 8px;
     width: 80%;
-    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New, monospace;
+    font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 }
 
 .textarea {
@@ -249,12 +254,21 @@ table caption {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 0.8; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInWelcome {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
