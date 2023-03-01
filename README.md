@@ -1,6 +1,8 @@
+(Demo: access via https://comp3421-web.jacky.fan)
+
 # comp3421-personal-website
 
-This is a personal website for COMP3421 Mid-Project. This website is built with HTML and Plain CSS.
+A personal website built with plain HTML5 and CSS3 for Mid-Project of COMP3421 Web Application Design and Development.
 
 ## Features
 - [x] Title on the page
